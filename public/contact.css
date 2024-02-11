@@ -1,0 +1,43 @@
+#contact h3{
+    font-size: 4vw;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+#contact span{
+    color: gray;
+    font-size: small
+}
+
+#contact ::placeholder{
+    padding: 0 1vw;
+}
+#contact input{
+   background-color: rgba(0, 0, 0, 0.288);
+    border: 0;
+    border-radius: 10px;
+    color:rgb(192, 189, 189);
+    text-transform: capitalize;
+}
+#contact input:nth-child(3){
+    height: 3vw;
+    width: 45%
+}
+
+
+#contact input:nth-child(4){
+    height: 3vw;
+    width: 45%
+}
+
+#contact input:nth-child(5){
+    margin: 2vw 0;
+    height: 10vw;
+    width: 99%
+}
+
+
+#contact button{
+    width: 100%;
+    background-color: black;
+    color: white;
+}
