@@ -37,3 +37,7 @@ app.get("*", (req, res) => {
     res.send("page not found")
 })
     
+app.post("/contact",(req, res)=> {
+    console.log("submited")
+    res.render("form.ejs")
+})
