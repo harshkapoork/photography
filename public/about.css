@@ -29,23 +29,34 @@
 @media only screen and (max-width:600px) {
 
   #heading{ 
-     font-size:x-small;
+     font-size:3.5vw;
   }
-
- 
   #text{display: flex;
-gap:1vw
-  }
-  #left_text{
-    font-size: 3vw;
-    font-weight: 600;
-  }
-  #right_text p{
-    font-size: xx-small;
-    color:gray;
+    width: 100%;
+    gap:8vw;
+      }
+      
+      #left_text{
+        font-size: 4vw;
+        display: flex;
+        justify-content: flex-start;
+        font-weight: 900;
+      }
+      #right_text{
+        padding-top:4vw;
+      }
+      #right_text p{
+        line-height: 1.7vw;
+        letter-spacing: 2px;
+        font-size: 1.3vw;
+        color:gray;
+    
+      
+      }
+ 
 
-  
-  }
+
+
 
 }
 
@@ -106,14 +117,10 @@ width: 180%;
 #text{display: flex;
   width: 100%;
   gap:10vw;
-
-
-
-
-
     }
+
     #left_text{
-      font-size: 2.5vw;
+      font-size: 2.4vw;
       display: flex;
       justify-content: flex-start;
 
@@ -341,6 +348,26 @@ flex-direction: column;
   height: 27vw;
   object-fit: contain;
  }
+ @media (max-width:600px) {
+  #footer h3{text-transform: capitalize;
+    font-size: 8vw;
+  
+   }
+
+  #imgg3 img:nth-child(1){
+
+    width: 45vw;
+    height: 39vw;
+    object-fit: contain;
+   }
+   #imgg3 img:nth-child(2){
+    width: 35vw;
+    height: 39vw;
+    object-fit: contain;
+   }
+ }
+
+
  #number ,#email ,#address{
   display: flex;
 
@@ -406,17 +433,23 @@ button{
  
 }
 
-@media only screen and (max-width:600px) {
+@media (max-width:600px) {
 
   input{
+border:0;
+    height: 4vh;
+    width: 70%;
 
-    height: 6vh;
-    width: 60%;
 
   }
-  button{
+  input::placeholder{
 
-    width: 13vw;
-;
+    padding: 0 2vw;
+  }
+  button{border:0;
+    height: 5vh;
+
+    width: 20vw;
+
   }
 }
