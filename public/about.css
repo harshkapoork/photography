@@ -3,6 +3,8 @@
 }
 *{
   font-family: sans-serif;
+box-sizing: border-box;
+  cursor:default;
 }
 * img{
   filter: grayscale(1);
@@ -17,6 +19,7 @@
 #about{height: 100%;
  overflow: hidden;
   margin: 0vw 3vw 0vw 3vw;
+  position: relative;
 }
 
 #heading{ width: 100%;

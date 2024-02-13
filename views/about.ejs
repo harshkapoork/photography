@@ -1,12 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="about.css">
-</head>
+<!-- header code file start -->
+<%-include("includes/head.ejs")%>
+<!-- header code file end -->
 <body>
+    
+    <!-- nav code file -->
+    <%- include("includes/nav.ejs")
+    %>
+    <!-- nav code file -->
+
+
     <div id="about">
         <div id="heading">
             <h1>about</h1>
@@ -149,38 +151,10 @@
     </div>
 </div>
 
-<div id="footer_container">
-
-    <div id="footer">
-        <h3> remember <br> Wonderful <br> Memories with <br> blake.co</h3>
-
-        <div id="imgg3">
-            <img src="https://images.pexels.com/photos/3153201/pexels-photo-3153201.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="">
-            <img src="https://images.pexels.com/photos/2955376/pexels-photo-2955376.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2">
-        </div>
-        
-        <div id="number"><h5>01</h5> 
-           
-            <span>+1234567890</span></div>
-            <hr>
-        <div id="email"><h5>02</h5> <span>Contact@Blakephotography.com</span></div>
-        <hr>
-        <div id="address"><h5>03</h5> <span>1234 Natraj Nagar, Jaipur ,India</span></div>
-<hr>
-<input  type="email" placeholder="email@farmer.com"> <button>SignUp</button>
-
-<div id="links">
-    <a href="/about">About</a>
-    <a href="/services">Services</a>
-    <a href="/works">Works</a>
-    <a href="/contact">Contact</a>
-</div>
-
-    </div>
-
-</div>
-
-
+<!-- 
+FOOTER CODE file start -->
+<%-include("includes/foot.ejs")%>
+<!-- footer code file end -->
 
 
     </div>
@@ -192,4 +166,50 @@
 
 </div>
 </body>
+<script>
+    var menu= document.querySelector("#menu")
+     var show=document.querySelector("#show")
+    
+     show.addEventListener("click",function(){
+        show.style.color="black"
+        menu.style.display="block"
+     })
+    menu.addEventListener("click",function(){
+        
+        menu.style.display="none"
+        show.style.color="black"
+    })
+    
+    
+    // cursor annimation
+    
+    // var body=document.querySelector("body")
+    
+    // var pointer=document.querySelector("#pointer")
+    
+    // body.addEventListener("mouseover",function(e){
+    //     pointer.style.display="block"
+    //  pointer.style.top=e.pageY +"px"
+    // pointer.style.left=e.pageX +"px"
+    // console.log(e)
+        
+    // })
+    var colour=document.querySelector("#color")
+    var picture=document.querySelectorAll("img")
+     colour.addEventListener("click",function(){
+        setTimeout(function(){
+            for(picture of picture){
+            picture.style.filter="none"
+            console.log("timeout")
+        }
+        },100)
+    
+       
+      
+     })
+      
+    
+    
+    
+    </script>
 </html>

@@ -11,6 +11,7 @@
 #contact ::placeholder{
     text-transform: none;
     padding: 0 1vw;
+    text-align: start;
 }
 
 #contact form{display: flex;
@@ -31,7 +32,7 @@ gap:2vw;
 
 
 #contact input:nth-child(2){
-    height: 3vw;
+    height: 5vw;
     width: 45%;
 
 }

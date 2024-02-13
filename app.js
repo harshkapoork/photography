@@ -1,6 +1,6 @@
 const express = require("express");
 const app = express();
-const port = 1001;
+const port = process.env.PORT || 1001;
 const path=require("path")
 app.listen(port, () => {
     console.log("server is created at",port)
